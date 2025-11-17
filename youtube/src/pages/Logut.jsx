@@ -1,36 +1,28 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Login.css";
+
 export default function Login() {
-       <button
-        style={{
-          padding: "10px 20px",
-          backgroundColor: "black",
-          color: "white",
-          border: "none",
-          borderRadius: "6px",
-          cursor: "pointer",
-          marginBottom: "20px"
-        }}
-        onClick={() => navigate("/")}
-      >
-        ⬅ Back
-      </button>
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   function handleLogin() {
-    if (!email|| !password) {
+    if (!email || !password) {
       alert("Please enter both email and password");
       return;
     }
-  alert("Login successful!");
+    alert("Login successful!");
     navigate("/");
   }
 
   return (
     <div className="login-container">
+      <button className="back-btn" onClick={() => navigate("/")}>
+        ⬅ Back
+      </button>
+
       <div className="login-box">
         <h2>Login</h2>
 
@@ -48,8 +40,10 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button onClick={handleLogin}>Login</button><br></br><br></br>(or)<br></br><br></br>
-        <button onClick={handleLogin}>Logut</button>
+        <button className="login-btn" onClick={handleLogin}>
+          Login
+        </button>
+        <button className="login-btn" onClick={handleLogin}> Logut</button>
       </div>
     </div>
   );

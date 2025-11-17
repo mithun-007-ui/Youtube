@@ -10,6 +10,7 @@ import Download from '../src/pages/Download.jsx';
 import Profile from '../src/pages/Profile.jsx';
 import Subscription from '../src/pages/Subscription.jsx';
 import Music from '../src/pages/Music.jsx'
+import Logut from '../src/pages/Logut.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
             <Route path='/profile' element={<Profile />} />
             <Route path='/subscripition' element={<Subscription />} />ubscription
             <Route path='/Music' element={<Music />} />
+            <Route path='/logut' element={<Logut />} />
         </Routes>
   </StrictMode>
   </BrowserRouter>

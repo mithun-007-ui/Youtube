@@ -15,8 +15,6 @@ function Download() {
 
   return (
     <div style={{ padding: "20px" }}>
-
-      {/* Back Button */}
       <button
         style={{
           padding: "10px 20px",

@@ -3,10 +3,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch} from "react-icons/fa";
 import './Header.css';
 import Logo from '../assets/logo.png';
-
+import Profile from '../pages/Profile.jsx';
 function Header() {
   const [searchQuery, setSearchQuery] = useState("");
-
   return (
     <div className="header">
       <div className="headerLeft">
@@ -25,7 +24,7 @@ function Header() {
         </div>
       </div>
       <div>
-        <button ></button>
+        
       </div>
       </div>
     
