@@ -1,0 +1,42 @@
+/* Container */
+.download-container {
+  padding: 20px;
+}
+
+/* Back Button */
+.back-btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Video Card */
+.video-card {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: white;
+}
+
+/* Video Player */
+.video-player {
+  width: 100%;
+  border-radius: 8px;
+}

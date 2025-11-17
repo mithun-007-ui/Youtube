@@ -1,0 +1,70 @@
+.shorts-page {
+  padding: 20px;
+  text-align: center;
+}
+.back-btn {
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.shorts-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.shorts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.short-card {
+  width: 280px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.short-video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.short-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.short-buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.like-btn,
+.sub-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.like-btn {
+  background: #e4e4e4;
+}
+.like-btn.liked {
+  background: #0f9d58;
+  color: white;
+}
+.sub-btn {
+  background: red;
+  color: white;
+}
+
+.sub-btn.subscribed {
+  background: #333;
+  color: #fff;
+}
